@@ -1,0 +1,21 @@
+{
+	"nodes":[
+		{"id":"d99608d958f00741","type":"text","text":"DNS Server","x":200,"y":-67,"width":158,"height":50,"color":"3"},
+		{"id":"8c80bde6067dd829","type":"text","text":"SMTP Server","x":180,"y":260,"width":120,"height":60,"color":"2"},
+		{"id":"246cb83cc3ec5c03","type":"text","text":"POP3/IMAP Server","x":42,"y":425,"width":198,"height":55,"color":"#bb1ee6"},
+		{"id":"5194194b358207a9","type":"text","text":"PC 2","x":480,"y":500,"width":105,"height":50,"color":"6"},
+		{"id":"ecc618fe0b5bef10","type":"text","text":"PC 1 ","x":-420,"y":130,"width":105,"height":50,"color":"6"},
+		{"id":"f6af6aa9d1d6a3a8","type":"text","text":"SMTP Server","x":-140,"y":40,"width":120,"height":60,"color":"2"},
+		{"id":"0d820ee6d4e829f8","type":"text","text":"Firewall","x":-84,"y":180,"width":128,"height":51,"color":"1"}
+	],
+	"edges":[
+		{"id":"06ff1e303b0b0629","fromNode":"ecc618fe0b5bef10","fromSide":"right","toNode":"f6af6aa9d1d6a3a8","toSide":"left","color":"4","label":"1-Send mail"},
+		{"id":"8f4705c3fbc36fae","fromNode":"f6af6aa9d1d6a3a8","fromSide":"right","toNode":"d99608d958f00741","toSide":"left","color":"4","label":"2-Demande"},
+		{"id":"5069c36666e6441e","fromNode":"d99608d958f00741","fromSide":"bottom","toNode":"f6af6aa9d1d6a3a8","toSide":"right","color":"4","label":"3-Réception"},
+		{"id":"bc672c84efa2fdd6","fromNode":"f6af6aa9d1d6a3a8","fromSide":"bottom","toNode":"0d820ee6d4e829f8","toSide":"top","color":"4","label":"4-Envoie sur Internet du mail"},
+		{"id":"7db136618e7afcef","fromNode":"0d820ee6d4e829f8","fromSide":"bottom","toNode":"8c80bde6067dd829","toSide":"left","color":"4","label":"5-Server SMTP cible"},
+		{"id":"a97dca61d8e3d745","fromNode":"8c80bde6067dd829","fromSide":"bottom","toNode":"246cb83cc3ec5c03","toSide":"top","color":"4","label":"6-stockage Local POP3/IMP server"},
+		{"id":"151d371813e5a2c5","fromNode":"5194194b358207a9","fromSide":"bottom","toNode":"246cb83cc3ec5c03","toSide":"bottom","color":"4","label":"7-Pc 2 ce connecte a son client mail"},
+		{"id":"4aa212e93189e0f2","fromNode":"246cb83cc3ec5c03","fromSide":"right","toNode":"5194194b358207a9","toSide":"top","color":"4","label":"8-L'email arrive sur le clien mail"}
+	]
+}
