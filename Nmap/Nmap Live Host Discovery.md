@@ -1,2 +1,2 @@
-![nmap](assets/nmap.png)
+![nmap](/assets/nmap.png)
 
