@@ -18,8 +18,7 @@
 **Blind SQLi - Authentification Bypass**
     Se produit lorsque nous n'obtenons que peu ou pas de retour d'information pour confirmer si nos requêtes injectées ont réussi ou non, car les messages d'erreur ont été désactivés, mais l'injection fonctionne quand même.
     Pour le Bypass nous voulons contourner les méthodes d'authentification telles que les formulaires de connexion. Dans ce cas, nous ne sommes pas intéressés par l'extraction de données de la base de données ; nous voulons simplement passer le formulaire de connexion.
-
-    Exemple : L'application web demande à la base de données "avez-vous un utilisateur avec le nom d'utilisateur bob et le mot de passe bob123 ?", et la base de données répond par oui ou non (vrai/faux) et, en fonction de cette réponse, dicte si l'application web vous laisse continuer ou non.
+    L'application web demande à la base de données "avez-vous un utilisateur avec le nom d'utilisateur bob et le mot de passe bob123 ?", et la base de données répond par oui ou non (vrai/faux) et, en fonction de cette réponse, dicte si l'application web vous laisse continuer ou non.
 
 **Blind SQLi - Boolean Based**
     Cela fait référence à la réponse que nous recevons en retour de nos tentatives d'injection. Il peut s'agir d'une réponse de type vrai/faux, oui/non, on/off, 1/0 ou de toute autre réponse qui ne peut avoir que deux résultats. Ce résultat nous confirme que notre charge utile d'injection SQL a réussi ou non. À première vue, vous pouvez avoir l'impression que cette réponse limitée ne fournit pas beaucoup d'informations.
